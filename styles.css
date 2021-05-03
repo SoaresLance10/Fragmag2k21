@@ -28,6 +28,13 @@ body {
     overflow-x: hidden;
 }
 
+.restofcontent {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
+}
+
 section {
     padding: 1.9rem 0;
     overflow: hidden;
@@ -63,7 +70,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2000;
     background-image: linear-gradient(to bottom, rgba(0,0,0, .5), transparent);
     background-color: transparent;
     transition: all 500ms ease-in-out;
@@ -172,15 +179,114 @@ header {
 
 /* Hero */
 
-.hero {
+.keyart, .keyart_layer {
+    height: 1000px;
+  }
+  
+  #parallax {
+    display: block;
+  }
+  
+  .keyart {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .keyart_layer {
+    background-position: bottom center;
+    background-size: auto 1038px;
+    background-repeat: repeat-x;
     width: 100%;
-    height: 100vh;
-    background: url("images/hero3.jpg") center no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
+    position: absolute;
+  }
+  
+  .keyart_layer.parallax {
+    position: fixed;
+  }
+  
+  #keyart-0 {
+    background-image: url("assets/parallax0.png");
+    background-color: #ffaf1b;
+  }
+  
+  #keyart-1 {
+    background-image: url("assets/parallax1.png");
+  }
+  
+  #keyart-2 {
+    background-image: url("assets/parallax2.png");
+  }
+  
+  #keyart-3 {
+    background-image: url("assets/parallax3.png");
+  }
+  
+  #keyart-4 {
+    background-image: url("assets/parallax4.png");
+  }
+  
+  #keyart-5 {
+    background-image: url("assets/parallax5.png");
+  }
+  
+  #keyart-6 {
+    background-image: url("assets/parallax6.png");
+  }
+  
+  #keyart-7 {
+    background-image: url("assets/parallax7.png");
+  }
+  
+  #keyart-8 {
+    background-image: url("assets/parallax8.png");
+  }
+  
+  #keyart-scrim {
+    background-color: #ffaf00;
+    opacity: 0;
+  }
+  
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+
+    #keyart-0 {
+      background-image: url("assets/parallax0@2x.png");
+      background-color: #ffaf1b;
+    }
+  
+    #keyart-1 {
+      background-image: url("assets/parallax1@2x.png");
+    }
+  
+    #keyart-2 {
+      background-image: url("assets/parallax2@2x.png");
+    }
+  
+    #keyart-3 {
+      background-image: url("assets/parallax3@2x.png");
+    }
+  
+    #keyart-4 {
+      background-image: url("assets/parallax4@2x.png");
+    }
+  
+    #keyart-5 {
+      background-image: url("assets/parallax5@2x.png");
+    }
+  
+    #keyart-6 {
+      background-image: url("assets/parallax6@2x.png");
+    }
+  
+    #keyart-7 {
+      background-image: url("assets/parallax7@2x.png");
+      padding-left: 550px;
+      padding-top: 200px;
+    }
+  
+    #keyart-8 {
+      background-image: url("assets/parallax8@2x.png");
+    }
+  }
 
 .htitle {
     margin-bottom: 30px;
