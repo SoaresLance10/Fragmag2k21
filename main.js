@@ -88,12 +88,12 @@ window.addEventListener('scroll', () => {
         const epTop = ep.offsetTop;
         const epHeight = ep.clientHeight;
 
-        if (pageYOffset+130 >= epTop) {
+        if (pageYOffset - 850>= epTop) {
             current = ep.getAttribute('id');
         }
     })
 
-    if (pageYOffset + 100 >= footerTop) {
+    if (pageYOffset - 800 >= footerTop) {
         current = 'footer';
     }
 
@@ -114,7 +114,7 @@ window.addEventListener('scroll', () => {
 
     const themeTop = theme.offsetTop;
     const themeHeight = theme.clientHeight;
-    if (pageYOffset + 50 + themeHeight >= themeTop){
+    if (pageYOffset - 300 + themeHeight >= themeTop){
         header.classList.add('dark-header')
     }
     else {
